@@ -1,0 +1,19 @@
+extends layout.pug
+block content
+  p this is product page
+  .row
+    each product in products
+      .col-sm-4.col-xs-12
+        .thumbnail
+          img(src="assets/images/sample.jpg")
+          .caption
+            div(style="display:flex;justify-content:space-between;")
+              div
+                h3 #{product.name}
+              div
+                  a.btn.btn-warning(href="/order?id=" + product.id style="margin-top:20px;")
+                    span.glyphicon.glyphicon-shopping-cart
+            ul
+              li Price : #{product.price} yen
+              li Category : #{product.category}
+              li Availability : #{product.availability}

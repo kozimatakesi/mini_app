@@ -1,0 +1,51 @@
+[
+  {
+    "id": "1",
+    "name": "sample A",
+    "category": "alpha",
+    "price": "1000",
+    "availability": "4"
+  }, {
+    "id": "2",
+    "name": "sample B",
+    "category": "alpha",
+    "price": "1100",
+    "availability": "6"
+  }, {
+    "id": "3",
+    "name": "sample C",
+    "category": "alpha",
+    "price": "1200",
+    "availability": "0"
+  }, {
+    "id": "4",
+    "name": "sample D",
+    "category": "alpha",
+    "price": "1300",
+    "availability": "2"
+  }, {
+    "id": "5",
+    "name": "sample E",
+    "category": "beta",
+    "price": "300",
+    "availability": "1"
+  }, {
+    "id": "6",
+    "name": "sample F",
+    "category": "beta",
+    "price": "400",
+    "availability": "3"
+  }, {
+    "id": "7",
+    "name": "sample G",
+    "category": "beta",
+    "price": "500",
+    "availability": "6"
+  }, {
+    "id": "8",
+    "name": "sample H",
+    "category": "beta",
+    "price": "600",
+    "availability": "3"
+  }
+]

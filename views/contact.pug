@@ -1,0 +1,19 @@
+extends layout.pug
+block content
+  p this is contact page
+  form.form-horizontal(action="/contact" method="post")
+    .form-group
+      label.col-sm-2.control-label Name
+      .col-sm-10
+        input.form-control(name="name" placeholder="Your name")
+    .form-group
+      label.col-sm-2.control-label E-mail
+      .col-sm-10
+        input.form-control(name="email" placeholder="Your E-mail")
+    .form-group
+      label.col-sm-2.control-label Comment
+      .col-sm-10
+        textarea.form-control(name="comment" rows="10" placeholder="Comment")
+    .form-group
+      .col-sm-10.col-sm-offset-2
+        input.btn.btn-default(type="submit" value="Send")

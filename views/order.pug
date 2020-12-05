@@ -1,0 +1,26 @@
+extends layout.pug
+block content
+  p this is order page
+  .row
+    .col-sm-12
+      .thumbnail
+        img(src="assets/images/sample.jpg")
+        .caption
+          div
+            h3 #{product.name}
+          ul
+            li Price : #{product.price} yen
+            li Category : #{product.category}
+            li Availability : #{product.availability}
+          form.form-horizontal(action="/order/" + product.id method="post")
+            .form-group
+              label.col-sm-2.control-label Name
+              .col-sm-10
+                input.form-control(name="name" placeholder="Your name")
+            .form-group
+              label.col-sm-2.control-label E-mail
+              .col-sm-10
+                input.form-control(name="email" placeholder="Your E-mail")
+            .form-group
+              .col-sm-10.col-sm-offset-2
+                input.btn.btn-default(type="submit" value="Buy it")
